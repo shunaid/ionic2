@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-card>
+  <ion-list>
+
+      <ion-item>
+          <ion-input placeholder="user_name" [(ngModel)]="username"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-input expand="block" type="password" placeholder="password" fill="outline" [(ngModel)]="password"></ion-input>  
+          </ion-item>
+          
+  </ion-list>
+
+  <ion-button color="danger"style="width: 100% ;margin-top: 40px" (click)="submit()" >submit</ion-button>
+</ion-card>
+
+</ion-content>

@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Tab One
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card style="width: 450px;margin-top: 50px ; height: 400px;">
+        <ion-card-content>
+          <ion-list>
+    
+            <h1 style="margin-left: 170px; margin-top: 30px ; color: brown">Login</h1>
+    
+            <ion-item style="margin-top: 80px" >
+              <ion-input placeholder="username" [(ngModel)]="username"></ion-input>
+            </ion-item>
+    
+            <ion-item >
+              <ion-input placeholder="password" type="password" [(ngModel)]="password"></ion-input>
+            </ion-item>
+    
+            <ion-button color="danger"style="width: 100px ;margin-top: 30px, margin-left:70px, width: 80px" (click)="login()" >login</ion-button>
+            <ion-button color="danger"style="width: 100px ;margin-top: 20px, width: 80px " (click)="registerpage()" >Register</ion-button>
+    
+        </ion-list>
+      </ion-card-content>
+      </ion-card>      
+    
+</ion-content>

@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color='primary'>
+    <ion-title>
+      Image_Picker
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class='ion-padding'>
+    <ion-button (click)="pickMultipulImages()">Pick Multipul Images</ion-button>
+    <ion-list *ngFor="let Image of images">
+      <ion-item>
+          <img src={{image}}/>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <ion-slides pager >
+    <ion-slides style="background: white">
+     <h2> <img src="{{myphoto}}"> </h2>
+    </ion-slides>
+    <ion-slides style="background: white">
+    <h2> <img src="{{myphoto}}"> </h2>
+    </ion-slides>
+    <ion-slides style="background:white">
+     <h2> <img src="{{myphoto}}"> </h2>
+    </ion-slides>
+    
+  </ion-slides>
+
+  <ion-button (click)='takephoto()'>Camera </ion-button>
+  <p algin="center"><img src="{{myphoto}}"></p>
+
+
+  <ion-button (click)='smssend()'>SMS</ion-button>
+</ion-content>
